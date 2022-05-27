@@ -1,5 +1,6 @@
 package com.study.javatest;
 
+import com.study.javatest.domain.Study;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.EnabledOnJre;
 import org.junit.jupiter.api.condition.EnabledOnOs;
@@ -37,7 +38,7 @@ class StudyTest {
     void create_new_study() {
 
         Study actual = new Study(100);
-        assertThat(actual.getLimit()).isGreaterThan(0);
+        assertThat(actual.getLimitCount()).isGreaterThan(0);
     }
 
     @Order(1)
